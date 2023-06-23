@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0B0B"
+    tools:context=".MainActivity">
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#1C1616"
+        app:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:rowCount="6">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="1dp"
+            android:paddingRight="50px"
+            android:text="Hello World"
+            android:textColor="#CCC9D3"
+            android:textDirection="rtl"
+            android:textSize="200px"
+
+            app:layout_columnSpan="4"
+            app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_height="wrap_content"
+            android:background="#2B1C1C"
+            android:text="C"
+            android:textColor="#795548"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2B1C1C"
+            android:text="+/-"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:background="#2B1C1C"
+            android:text="%"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <Button
+            android:backgroundTint="#BD0707"
+            android:text="/"
+            android:textSize="48sp"
+            app:cornerRadius="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:background="#2B1C1C"
+            android:text="7"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:background="#2B1C1C"
+            android:text="8"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:background="#2B1C1C"
+            android:text="9"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:text="X"
+            android:textSize="48sp"
+            android:backgroundTint="#BD0707"
+            app:cornerRadius="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:background="#2B1C1C"
+            android:text="4"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:background="#2B1C1C"
+            android:text="5"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:background="#2B1C1C"
+            android:text="6"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:text="-"
+            android:textSize="48sp"
+            android:backgroundTint="#BD0707"
+            app:cornerRadius="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:background="#2B1C1C"
+            android:text="1"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:background="#2B1C1C"
+            android:text="2"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:background="#2B1C1C"
+            android:text="3"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="DuplicateClickableBoundsCheck,TextContrastCheck" />
+
+        <Button
+            android:text="+"
+            android:textSize="48sp"
+            android:backgroundTint="#BD0707"
+            app:cornerRadius="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="180dp"
+            android:background="#2B1C1C"
+            android:text="0"
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:background="#2B1C1C"
+            android:text="."
+            android:textColor="#2E2323"
+            android:textSize="48sp"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="5"
+            app:layout_rowWeight="1"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:text="="
+            android:textSize="48sp"
+            android:backgroundTint="#BD0707"
+            app:cornerRadius="0dp"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_row="5"
+            app:layout_rowWeight="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <!--    <GridLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:columnCount="3"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Button1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_row="0"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            android:layout_column="0"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:layout_margin="0dp"-->
+    <!--            android:onClick="onButton1"-->
+    <!--            android:text="1" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Button2"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_row="0"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            android:layout_column="1"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:onClick="onButton2"-->
+    <!--            android:text="2" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Button3"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_row="0"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            android:layout_column="2"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:layout_margin="0dp"-->
+    <!--            android:onClick="onButton3"-->
+    <!--            android:text="3"-->
+    <!--            tools:targetApi="lollipop" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Button4"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_row="1"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            android:layout_column="0"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:layout_margin="0dp"-->
+    <!--            android:onClick="onButton4"-->
+    <!--            android:text="4" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Button5"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_row="1"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            android:layout_column="1"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:layout_margin="0dp"-->
+    <!--            android:onClick="onButton5"-->
+    <!--            android:text="5" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Button6"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_row="1"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            android:layout_column="2"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:layout_margin="0dp"-->
+    <!--            android:onClick="onButton6"-->
+    <!--            android:text="6" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Button7"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_row="2"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            android:layout_column="0"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:layout_margin="0dp"-->
+    <!--            android:onClick="onButton7"-->
+    <!--            android:text="7" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Button8"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_row="2"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            android:layout_column="1"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:layout_margin="0dp"-->
+    <!--            android:onClick="onButton8"-->
+    <!--            android:text="8" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Button9"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_row="2"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            android:layout_column="2"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:layout_margin="0dp"-->
+    <!--            android:onClick="onButton9"-->
+    <!--            android:text="9" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Button0"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_row="3"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            android:layout_column="0"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:layout_margin="0dp"-->
+    <!--            android:onClick="onButton0"-->
+    <!--            android:text="0" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/ButtonEnter"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_row="3"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            android:layout_columnSpan="2"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:layout_gravity="fill_horizontal"-->
+    <!--            android:onClick="onButtonEnter"-->
+    <!--            android:text="enter" />-->
+    <!--    </GridLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
